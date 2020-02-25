@@ -1,15 +1,33 @@
 name: SimpleAlert
-options:
-  bundleIdPrefix: com.shotastage
-deploymentTarget: "12.0"
 attributes:
   ORGANIZATIONNAME: "Shota Shimazu"
-
+options:
+  bundleIdPrefix: com.shotastage
+  deploymentTarget:
+    iOS: 12.0
 targets:
   SimpleAlert:
+    type: framework
+    platform: iOS
+    sources:
+      - SimpleAlert
+    settings:
+      base:
+        INFOPLIST_FILE: SimpleAlert/Info.plist
+    SimpleAlertTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - SimpleAlertTests
+    settings:
+      base:
+        INFOPLIST_FILE: SimpleAlertTests/Info.plist
+    dependencies:
+      - target: SimpleAlert
+  Example:
     type: application
     platform: iOS
-    deploymentTarget: "12.0"
-    sources: SimpleAlert
-    settings:
-      CURRENT_PROJECT_VERSION: 1
+    sources:
+      - Example
+    dependencies:
+      - target: SimpleAlert
