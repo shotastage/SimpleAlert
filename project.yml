@@ -14,7 +14,7 @@ targets:
     settings:
       base:
         INFOPLIST_FILE: SimpleAlert/Info.plist
-    SimpleAlertTests:
+  SimpleAlertTests:
     type: bundle.unit-test
     platform: iOS
     sources:

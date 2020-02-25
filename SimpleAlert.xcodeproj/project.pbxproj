@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3001DF15A861AAD3E6F9E95C /* SimpleAlert.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 5F9B3B7C50852432B0DE92F8 /* SimpleAlert.xctest */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		135ADD0676975C696BF750EE /* SimpleAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FF4CDCBB1AC50C0677E9CD /* SimpleAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		399DAB1E00588C23AE379B57 /* SimpleAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8132BE24D629CC9E6CD9D95 /* SimpleAlertTests.swift */; };
+		4D40F518D0AA0D1D91276D15 /* SimpleAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B16B08C556610B59226F665 /* SimpleAlert.framework */; };
+		52C6927B923BC24B21211AA2 /* SimpleAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B16B08C556610B59226F665 /* SimpleAlert.framework */; };
 		574AE7BF796773651202B670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C43AF5F28AC845D9F7142C /* AppDelegate.swift */; };
+		66A732484B05B064BE20ABFB /* SimpleAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B16B08C556610B59226F665 /* SimpleAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76E92275C29331C6B3C7171B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B9F6A306F8A1B7C0C9BC2 /* SceneDelegate.swift */; };
 		7BB4BF26439D56A48FE2131F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BF640900D1298118CBC4F8 /* ViewController.swift */; };
 		83C097D6B0960F2295051994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C27CA54204AFA0BDF4F012E /* LaunchScreen.storyboard */; };
-		C273B33836783EE4069865F7 /* SimpleAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8132BE24D629CC9E6CD9D95 /* SimpleAlertTests.swift */; };
 		DB94180CBFAE4ED3CDA9DDE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB5422E3542D37825A7B9F1 /* Main.storyboard */; };
 		DF950CF90A595C1F78A3FD7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2960DB518B7DC9DDD078CA1F /* Assets.xcassets */; };
+		E0A76A5795ABFABC2C185128 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FE733ED04FAD2326EA584F /* SimpleAlert.swift */; };
+		E0C385429C1215F3E909C59C /* SimpleAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B16B08C556610B59226F665 /* SimpleAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		01F1CAB83D03410439C2F4F5 /* PBXContainerItemProxy */ = {
+		3B8D9E01DAB59AAEEB6E0179 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA8490DDBF073D9EE509641E /* Project object */;
 			proxyType = 1;
@@ -34,26 +39,75 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8E28F6972F8213C59CBC258E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66A732484B05B064BE20ABFB /* SimpleAlert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B718BC6D19B912AA9150D000 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0C385429C1215F3E909C59C /* SimpleAlert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1777A349D0962C7288DF5CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		180B9F6A306F8A1B7C0C9BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1E51A88FBAF985D744FC320B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		27C43AF5F28AC845D9F7142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2960DB518B7DC9DDD078CA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE2A219C415F050CFC4E0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E4010D2D33D76BB7A3BE1B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32FE733ED04FAD2326EA584F /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		35BF640900D1298118CBC4F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B16B08C556610B59226F665 /* SimpleAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D6E83F2DEC1D4BA941385D /* SimpleAlertTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SimpleAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FF4CDCBB1AC50C0677E9CD /* SimpleAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleAlert.h; sourceTree = "<group>"; };
 		53DFC38A75ECE0E34908AFF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59ED9BB5421D4D38126B9857 /* Example.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F9B3B7C50852432B0DE92F8 /* SimpleAlert.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SimpleAlert.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8132BE24D629CC9E6CD9D95 /* SimpleAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E30404095F92D97EC5534E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C6927B923BC24B21211AA2 /* SimpleAlert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD93E68F7DD0CE0AD1EDE1E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40F518D0AA0D1D91276D15 /* SimpleAlert.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		111ABFB250AA281101A4DF5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				59ED9BB5421D4D38126B9857 /* Example.app */,
-				5F9B3B7C50852432B0DE92F8 /* SimpleAlert.xctest */,
+				3B16B08C556610B59226F665 /* SimpleAlert.framework */,
+				43D6E83F2DEC1D4BA941385D /* SimpleAlertTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +119,16 @@
 				A8132BE24D629CC9E6CD9D95 /* SimpleAlertTests.swift */,
 			);
 			path = SimpleAlertTests;
+			sourceTree = "<group>";
+		};
+		65836375D4DC15F3BFF73514 /* SimpleAlert */ = {
+			isa = PBXGroup;
+			children = (
+				1E51A88FBAF985D744FC320B /* Info.plist */,
+				52FF4CDCBB1AC50C0677E9CD /* SimpleAlert.h */,
+				32FE733ED04FAD2326EA584F /* SimpleAlert.swift */,
+			);
+			path = SimpleAlert;
 			sourceTree = "<group>";
 		};
 		9076924D09135180D7491D61 /* Example */ = {
@@ -85,12 +149,24 @@
 			isa = PBXGroup;
 			children = (
 				9076924D09135180D7491D61 /* Example */,
+				65836375D4DC15F3BFF73514 /* SimpleAlert */,
 				55D2E2447A8699CBFC97212F /* SimpleAlertTests */,
 				111ABFB250AA281101A4DF5D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D4D4B3C60D4F9C81716B9B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135ADD0676975C696BF750EE /* SimpleAlert.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7E861B94FFE9428D510AA009 /* Example */ = {
@@ -99,6 +175,8 @@
 			buildPhases = (
 				6A93769143BF3DB7F945A4A0 /* Sources */,
 				51A1902A1E59F931D18559DF /* Resources */,
+				4E30404095F92D97EC5534E0 /* Frameworks */,
+				8E28F6972F8213C59CBC258E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,21 +188,39 @@
 			productReference = 59ED9BB5421D4D38126B9857 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7FD0D45A145963F98B58116E /* SimpleAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072A3878D360EFDD07D685D4 /* Build configuration list for PBXNativeTarget "SimpleAlertTests" */;
+			buildPhases = (
+				6D6D4E8869116EE16FB85763 /* Sources */,
+				CD93E68F7DD0CE0AD1EDE1E2 /* Frameworks */,
+				B718BC6D19B912AA9150D000 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06118E5DB301F10B9E00E7C /* PBXTargetDependency */,
+			);
+			name = SimpleAlertTests;
+			productName = SimpleAlertTests;
+			productReference = 43D6E83F2DEC1D4BA941385D /* SimpleAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F4F98B0AC8A4D7420C3980B3 /* SimpleAlert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F05A68F3BACE8AAA3EF2E16A /* Build configuration list for PBXNativeTarget "SimpleAlert" */;
 			buildPhases = (
+				1D4D4B3C60D4F9C81716B9B4 /* Headers */,
 				84B7E7AA48B97AE441026389 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B245889E4E683ED191576A5E /* PBXTargetDependency */,
 			);
 			name = SimpleAlert;
 			productName = SimpleAlert;
-			productReference = 5F9B3B7C50852432B0DE92F8 /* SimpleAlert.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 3B16B08C556610B59226F665 /* SimpleAlert.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -150,6 +246,7 @@
 			targets = (
 				7E861B94FFE9428D510AA009 /* Example */,
 				F4F98B0AC8A4D7420C3980B3 /* SimpleAlert */,
+				7FD0D45A145963F98B58116E /* SimpleAlertTests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,7 +259,6 @@
 				DF950CF90A595C1F78A3FD7F /* Assets.xcassets in Resources */,
 				83C097D6B0960F2295051994 /* LaunchScreen.storyboard in Resources */,
 				DB94180CBFAE4ED3CDA9DDE0 /* Main.storyboard in Resources */,
-				3001DF15A861AAD3E6F9E95C /* SimpleAlert.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,11 +275,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D6D4E8869116EE16FB85763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399DAB1E00588C23AE379B57 /* SimpleAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B7E7AA48B97AE441026389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C273B33836783EE4069865F7 /* SimpleAlertTests.swift in Sources */,
+				E0A76A5795ABFABC2C185128 /* SimpleAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,10 +299,10 @@
 			target = F4F98B0AC8A4D7420C3980B3 /* SimpleAlert */;
 			targetProxy = FFF28B5A9470987C50BC6F6F /* PBXContainerItemProxy */;
 		};
-		B245889E4E683ED191576A5E /* PBXTargetDependency */ = {
+		D06118E5DB301F10B9E00E7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4F98B0AC8A4D7420C3980B3 /* SimpleAlert */;
-			targetProxy = 01F1CAB83D03410439C2F4F5 /* PBXContainerItemProxy */;
+			targetProxy = 3B8D9E01DAB59AAEEB6E0179 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -222,6 +326,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2E5028A1EFA2A57308F8466F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.SimpleAlertTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5A10555193817DFD94862F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -233,6 +353,22 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.Example;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F350C649B8BE9C917632EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.SimpleAlertTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -257,32 +393,46 @@
 		84C1F6E6B32BFE5220C641EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleAlert/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.SimpleAlert;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		9807EAD50EDDCC6F24873D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimpleAlertTests/Info.plist;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleAlert/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shotastage.SimpleAlert;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -401,6 +551,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		072A3878D360EFDD07D685D4 /* Build configuration list for PBXNativeTarget "SimpleAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F350C649B8BE9C917632EE5 /* Debug */,
+				2E5028A1EFA2A57308F8466F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "";
+		};
 		35F8302C909646C39DF4950E /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
